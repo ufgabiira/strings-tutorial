@@ -1,6 +1,5 @@
-# Strings
+# Estruturas de Dados: Strings
 
-Uma introdução breve.
 
 ## Table of Contents
  - [O que são Strings?](#whatis)
@@ -13,7 +12,6 @@ Uma introdução breve.
    - [Outros]()
   - [Fazer buscas](#search)
    - [Expressões Regulares](#regex)
-  -
 
 ## O que são Strings? <a name="whatis"></a>
 
@@ -32,3 +30,79 @@ Uma introdução breve.
 ### Fazer buscas <a name="search"></a>
 
 #### Expressões regulares <a name="regex"></a>
+
+<br />
+<hr />
+
+### Este guia foi desenvolvido por:
+
+
+<div align="center">
+  <p><b>Gabriel Ferreira</b></p>
+  </a>
+  <a href="https://github.com/ufgabiira">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  <a href="https://twitter.com/gab_iira">
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
+  <a href="https://instagram.com/gabriel_ffreire">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+  </a>
+</div>
+<br>
+
+<div align="center">
+  <p><b>Luiz Gustavo</b></p>
+  </a>
+  <a href="https://github.com/">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  <a href="https://twitter.com/">
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
+  <a href="https://instagram.com/">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+  </a>
+</div>
+<br>
+
+<div align="center">
+  <p><b>Pedro Manoel</b></p>
+  </a>
+  <a href="https://github.com/">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  <a href="https://twitter.com/">
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
+  <a href="https://instagram.com/">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+  </a>
+</div>
+<br>
+
+<div align="center">
+  <p><b>Cipriano Jose</b></p>
+  </a>
+  <a href="https://github.com/">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  <a href="https://twitter.com/">
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
+  <a href="https://instagram.com/">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+  </a>
+</div>
+<br>
+
+<div align="center">
+  <p><b>Wellder Bernardo</b></p>
+  </a>
+  <a href="https://github.com/">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  <a href="https://twitter.com/">
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
+  <a href="https://instagram.com/">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+  </a>
+</div>
+<br>
