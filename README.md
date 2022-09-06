@@ -34,7 +34,7 @@ _O valor de `a` é o texto "2 + 2", já o valor de `b` é o número 4, resultado
 
 ### **Como elas funcionam?** <a name="how"></a>
 
-Como nos <i>arrays</i>, as strings também possuem um valor de índice para cada elemento, ou caractere.
+Como nos _arrays_, as strings também possuem um valor de índice para cada elemento, ou caractere.
 
 ```pseudo
 hello = "hello world"
@@ -56,7 +56,7 @@ _Lembre-se que cada linguagem tem sua própria sintaxe e maneira de aplicar cada
 
 O termo concatenar significa conectar algo a uma sequência, logo concatenar strings significa liga-las uma após a outra, resultando em uma única string.
 
-```python
+```pseudo
 nome = "Fulano"
 sobrenome = "de Tal"
 nomeCompleto = nome + ' ' + sobrenome
@@ -119,4 +119,4 @@ Fulano de Tal
 
 [![image](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/)
 
-[![image](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/)  
+[![image](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/)
