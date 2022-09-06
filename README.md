@@ -6,7 +6,7 @@ Strings são muito importantes e fazem parte do dia a dia de qualquer programado
 
 - [O que são Strings?](#what)
   - [Como elas funcionam?](#how)
-- [O que podemos fazer com Strings?](#cando)
+- [O que podemos fazer com Strings?](#can-do)
   - [Concatenação](#concat)
   - [Encontrar substrings/caracteres](#find)
   - [Substituir substrings/caracteres](#replace)
@@ -46,7 +46,7 @@ hello = "hello world"
 
 Dessa maneira temos que o elemento no índice 0 é a letra 'h', no índice 5 é um espaço em branco, no índice 8 é a letra 'r' e assim por diante.
 
-## **O que podemos fazer com Strings?** <a name="cando"></a>
+## **O que podemos fazer com Strings?** <a name="can-do"></a>
 
 Para trabalhar com strings serão necessárias operações especícas. A seguir explicaremos alguns  
 dos métodos e funções mais importantes.  
@@ -54,8 +54,8 @@ _Lembre-se que cada linguagem tem sua própria sintaxe e maneira de aplicar cada
 
 ### **Concatenação** <a name="concat"></a>
 
-O termo concatenar significa conectar algo a uma sequência, logo concatenar strings significa liga-las uma após a outra, resultando em uma única string.
-
+O termo concatenar significa conectar algo a uma sequência, logo concatenar strings significa liga-las uma após a outra, resultando em uma única string.  
+**Exemplo:**
 ```pseudo
 nome = "Fulano"
 sobrenome = "de Tal"
@@ -63,14 +63,10 @@ nomeCompleto = nome + ' ' + sobrenome
 
 print(nomeCompleto)
 ```
-
 Saída:
-
-```python
-Fulano de Tal
 ```
-
-### Utilizar índices (como em arrays) <a name="indexes"></a>
+"Fulano de Tal"
+```
 
 ### Encontrar substrings/caracteres <a name="find"></a>
 
@@ -87,36 +83,16 @@ Fulano de Tal
 ### Este guia foi desenvolvido por
 
 **Gabriel Ferreira**
-[![image](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ufgabiira)
-
-[![image](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/gab_iira)
-
-[![image](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/gabriel_ffreire)
+[![image](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ufgabiira)[![image](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/gab_iira)[![image](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/gabriel_ffreire)
 
 **Pedro Manoel**
-[![image](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
-
-[![image](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/)
-
-[![image](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/)
+[![image](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)[![image](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/)[![image](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/)
 
 **Luiz Gustavo**
-[![image](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
-
-[![image](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/)
-
-[![image](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/)
+[![image](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)[![image](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/)[![image](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/)
 
 **Cipriano Jose**
-[![image](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
-
-[![image](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/)
-
-[![image](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/)
+[![image](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)[![image](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/)[![image](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/)
 
 **Wellder Bernardo**
-[![image](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
-
-[![image](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/)
-
-[![image](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/)
+[![image](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)[![image](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/)[![image](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/)
