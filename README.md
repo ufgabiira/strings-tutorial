@@ -1,5 +1,6 @@
 # Estruturas de Dados: Strings
-
+Strings são muito importantes e fazem parte do dia a dia de qualquer programador. Neste guia  
+explicaremos conceitos básicos e algumas aplicações que envolvem essas estruturas.
 
 ## Table of Contents
  - [O que são Strings?](#whatis)
@@ -14,6 +15,23 @@
    - [Expressões Regulares](#regex)
 
 ## O que são Strings? <a name="whatis"></a>
+
+As Strings são sequências ordenadas de caracteres. Elas são estruturas de dados muito parecidas  
+com os <i>arrays</i>, no entanto são exclusivas para texto, logo só armazenam caracteres.
+  
+Para inicializar uma string devemos usar áspas duplas:  
+```
+str = "Olá, mundo!"
+```  
+  
+<b>* *Muito cuidado para não se confundir!* </b>  
+```
+a = "2 + 2"
+b = 2 + 2
+```  
+  
+*O valor de `a` é o texto "2 + 2", já o valor de `b` é o número 4, resultado da  
+operação `2 + 2`.*
 
 ## O que podemos fazer com Strings? <a name="cando"></a>
 
