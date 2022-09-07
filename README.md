@@ -10,8 +10,8 @@ Strings são muito importantes e fazem parte do dia a dia de qualquer programado
   - [Concatenação](#concat)
   - [Encontrar substrings/caracteres](#find)
   - [Substituir substrings/caracteres](#replace)
-  - [Fazer buscas](#search)
-    - [Expressões Regulares](#regex)
+  - [Verificar maiúsculas e minúsculas](#test-case)
+- [Aplicações](#apply)
 
 ## **O que são Strings?** <a name="what"></a>
 
@@ -74,9 +74,9 @@ Saída:
 
 ### Transformar (maiúsculas e minúsculas) <a name="transform"></a>
 
-### Fazer buscas <a name="search"></a>
+## **Aplicações** <a name="apply"></a>
 
-#### Expressões regulares <a name="regex"></a>
+Strings são de fato estruturas muito úteis no nosso dia a dia. Seu uso em bancos de dados, ferramentas de busca (como o grep), criação e validação de senhas, entre outras situações, as tornam realmente essenciais.
 
 ---
 
