@@ -72,7 +72,7 @@ Saída:
 ```
 
 ### **Tamanho de uma string** <a name="tamanho"></a>
-A prática de encontrar o tamanho/comprimento de uma string é muito comum na programação, frequentemente nos deparamos com algum problema que para serem resolvidos devemos saber o comprimento total da string para percorrê-la, por exemplo. Sob essa ótica, a linguagem python tem a função nativa “len” que retorna o tamanho da string.
+A prática de encontrar o tamanho/comprimento de uma string é muito comum na programação, frequentemente nos deparamos com algum problema que para ser resolvido devemos saber o comprimento total da string para percorrê-la, por exemplo. Sob essa ótica, a linguagem python tem a função interna "len" que retorna o tamanho da string.
 
 **Exemplo:**
 ```pseudo
@@ -85,17 +85,17 @@ Saída:
 ```
 12
 ```
-Como resultado, temos o valor 12. Entretanto, é possível observar que embora só exista 11 letras, o resultado apontou um elemento a mais, esse elemento corresponde ao "espaço" entre as letras "o e w", que para a função significa caracter especial.
+Como resultado, temos o valor 12. Entretanto, é possível observar que embora só exista 11 letras, o resultado apontou um elemento a mais, esse elemento corresponde ao "espaço" entre as letras "o e w", que para a função significa um caractere especial.
 
 ##### Método 2:
 
- Podemos encontrar o tamanho da string em bytes, usando a biblioteca de funções "sys", através da função “getsizeof”, da seguinte forma: 	
+ Podemos encontrar o tamanho da string em bytes, usando a biblioteca de funções "sys", através do método “getsizeof”, da seguinte forma: 	
 
 **Exemplo:**
 ```pseudo
 import sys 
 
-texto= "Hello World!" 
+texto = "Hello World!" 
 res = sys.getsizeof(texto) 
 
 print(res)
@@ -110,9 +110,9 @@ O resultado será 61, que corresponde ao tamanho em bytes da string.
 
 ##### Método 3:
 
-Embora exista todas essas funções nativas, é possível encontrar o comprimento/tamanho de forma manual, segue abaixo uma dessa formas: 
+Embora exista todas essas funções, é possível encontrar o comprimento/tamanho de forma manual, segue abaixo um exemplo: 
 
-Criamos uma estrutura de repetição, um “for”, por exemplo, que percorre cada caracter da string, até o seu último elemento "\0", incrementando uma variável contadora. Ao final, o resultado da variável contadora será o tamanho/comprimento da string.
+Criamos uma estrutura de repetição, um “for”, por exemplo, que percorre cada posição da string, até o seu último elemento "\0", incrementando uma variável contadora. Ao final, o resultado da variável contadora será o tamanho/comprimento da string.
 
 **Exemplo:**
 ```pseudo
@@ -120,7 +120,7 @@ x = 'Hello World!'
 length = 0
 
 for i in x: 
-length+=1 
+length += 1 
 print(length)
 ```
 
@@ -131,16 +131,15 @@ Saída:
 
 ### **Aparar uma string** <a name="aparar"></a>
 
-Remover determinados trechos ou caracteres especiais, é uma prática bem comum na manipulação de strings, constantemente os algoritmos precisam remover espaços indesejados ou caracteres especiais, como ponto e hífen, das strings, para evitar determinados erros de conflito. Sob essa ótica, a linguagem python tem os métodos strip, rstrip e lstrip que podem ser usados para remover espaços em branco antes e depois na string.
+Remover determinados trechos ou caracteres especiais como espaços ou hífens, por exemplo, é uma prática bem comum na manipulação de strings. Sob essa ótica, a linguagem python tem os métodos strip, rstrip e lstrip que podem ser usados para remover espaços em branco antes e depois na string.
 
-strip(): retorna uma nova string removendo todos os espaços em branco iniciais e finais, incluindo tabulações “\t”.
+strip(): retorna uma nova string removendo todos os espaços em branco iniciais e finais, incluindo tabulações "\t".
 
 **Exemplo:**
 ```pseudo
 stTeste = "    TEXTO    "
 stTesteTrim = stTeste.strip() 
 print("[" + stTesteTrim + "]")
-
 ```
 
 Saída:
@@ -163,14 +162,13 @@ Saída:
 [    TEXTO]
 ```
 
-lstrip(): atua de forma similar ao “rstrip”, entretanto, só remove os espaços em branco à esquerda da string.
+lstrip(): atua de forma similar ao “rstrip”, porém, só remove os espaços em branco à esquerda da string.
 
 **Exemplo:**
 ```pseudo
 stTeste = "    TEXTO    "
 stTesteTrim = stTeste.lstrip() 
 print("[" + stTesteTrim + "]")
-
 ```
 
 Saída:
@@ -185,7 +183,7 @@ De modo geral, uma substring é uma string dentro de outra string, na vida real,
 
  ##### Método 1: 
  
- find(): A função "find" retorna o índice do primeiro caracter da substring dentro da string, caso a substring não exista ele retorna "-1".
+ find(): o método "find" retorna o índice do primeiro caracter da substring dentro da string, caso a substring não exista ele retorna "-1".
 
 **Exemplo:**
 ```pseudo
@@ -203,7 +201,7 @@ O resultado é "0", que corresponde ao índice inicial da substring na string.
 
 ##### Método 2:
 
-rfind(): Podemos usar também o método “rfind”, que retorna o último índice da substring na string.
+rfind(): podemos usar também o método “rfind”, que retorna o último índice da substring na string.
 
 **Exemplo:**
 ```pseudo
@@ -219,12 +217,12 @@ Saída:
 
 ##### Método 3:
 
-index(): Além das funções “find e rfind”, também podemos usar a função “index”, que funciona de forma semelhante a função “find”, entretanto quando a substring não é encontrada a função retorna “ValueError”.
+index(): Além das funções "find e rfind", também podemos usar o método "index", que funciona de forma semelhante ao método "find", todavia quando a substring não é encontrada o método retorna "ValueError".
 
 **Exemplo:**
 ```pseudo
 substring = "z"
-string = "hello world" 
+string = "Hello world" 
 print(string.index(substring))
 ```
 
@@ -239,9 +237,9 @@ Operador in: Podemos usar também o operador "in" que verifica se o operando à 
 
 **Exemplo:**
 ```pseudo
-str = "hello world!"
-if 'hello' in str:
-	print(“encontrado!”)
+str = "Hello world!"
+if 'Hello' in str:
+	print("encontrado!")
 ```
 Saída:
 ```
@@ -250,13 +248,13 @@ encontrado!
 
 ##### Método 5:
 
-endswith(): A função "endswhith" verifica se a substring está no final da string, caso esteja essa função retorna "true", caso contrário retorna "false".
+endswith(): O método "endswhith" verifica se a substring está no final da string, caso esteja essa função retorna "true", caso contrário retorna "false".
 
 
 **Exemplo:**
 ```pseudo
-str = "hello world"
-	subs="world"
+str = "Hello world"
+subs="world"
 str.startswith( subs )
 ```
 Saída:
@@ -266,12 +264,12 @@ true
 
 ##### Método 6:
 
-startswith(): É semelhante a função “endswhith”, entretanto verifica se a substring está no início da string.
+startswith(): É semelhante ao "endswhith", entretanto verifica se a substring está no início da string.
 
 **Exemplo:**
 ```pseudo
-str = "hello world"
-	subs="hello"
+str = "Hello world"
+subs = "Hello"
 str.startswith( subs )
 ```
 Saída:
@@ -281,13 +279,13 @@ true
 
 ##### Método 7:
 
-count(): Com a função "count" é possível contar a quantidade de incidências da substring na string.
+count(): Com o método "count" é possível contar a quantidade de incidências da substring na string.
 
 
 **Exemplo:**
 ```pseudo
-str = "hello world"
-	subs = "hello"
+str = "Hello world"
+subs = "Hello"
 str.count( subs )
 ```
 Saída:
@@ -297,16 +295,16 @@ Saída:
 
 #### Outras operações:
 
-splint(): Além de encontrar ou contar substrings, é possível criar uma lista de substrings a partir de uma string, usando a função "splint".
+splint(): Além de encontrar ou contar substrings, é possível criar uma lista de substrings a partir de uma string, usando a função "split".
 
 **Exemplo:**
 ```pseudo
-string = "hello world" 
+string = "Hello world!" 
 print(string.split())
 ```
 Saída:
 ```
-['hello', 'world']
+['Hello', 'world!']
 ```
 
 ### **Substituir substrings/caracteres** <a name="substituicao"></a>
@@ -318,21 +316,20 @@ O método replace é utilizado para substituir um ou mais trechos em uma string,
 string.replace(valorvelho, valornovo, contador)
 ```
 
-O parâmetro “valorvelho” corresponde ao valor original que será substituído ao final do processo. 
+O parâmetro "valorvelho" corresponde ao valor original que será substituído ao final do processo. 
 
-O parâmetro “valornovo” corresponde ao novo valor que será inserido no lugar do “valorvelho”, 
+O parâmetro "valornovo" corresponde ao novo valor que será inserido no lugar do "valorvelho". 
 
-O parâmetro contador corresponde a quantas vezes o processo de substituição vai ocorrer. Esse parâmetro é opcional, caso não seja inserido o método substituirá todas as ocorrências do “valorvelho” encontrados na string, pelo “valornovo”.  
+O parâmetro contador corresponde a quantas vezes o processo de substituição vai ocorrer. Esse parâmetro é opcional, caso não seja inserido o método substituirá todas as ocorrências do "valorvelho" encontrados na string, pelo "valornovo".  
 
 **Exemplo:**
 ```pseudo
-string= "hello, world" 
+string= "Hello, world!" 
 print(string.replace(",", " -")) 
-
 ```
 Saída:
 ```
-hello - world
+Hello - world!
 ```
 
 
