@@ -128,8 +128,8 @@ print("b = ", b)
 Saída:
 
 ```output
-"mundo"
-"mundo"
+a = "mundo"
+b = "mundo"
 ```
 
 
