@@ -1,7 +1,9 @@
-# Estruturas de Dados: Strings
+## Introdução
 
 Strings são muito importantes e fazem parte do dia a dia de qualquer programador. Neste guia explicaremos alguns conceitos básicos que envolvem essas estruturas.  
-_Observação: Todos os nossos exemplos são pseudo-código._
+Este artigo é parte de um trabalho realizado por alunos da disciplina de Estruturas de Dados Básicas I do curso de Bacharelado em Técnologia da Informação pela Universidade Federal do Rio Grande do Norte.  
+  
+_Nota: Os exemplos estão em pseudo-código e python._
 
 ## Table of Contents
 
@@ -56,7 +58,7 @@ Temos que:
 | :-----------: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | **caractere** | 'h' | 'e' | 'l' | 'l' | 'o' | ' ' | 'w' | 'o' | 'r' | 'l' | 'd' |
 
-Dessa maneira temos que o elemento no `hello[0]` é a letra 'h', `hello[5]` é um espaço em branco, `hello[8]` é a letra 'r' e assim por diante.
+Dessa maneira o elemento `hello[0]` é a letra 'h', `hello[5]` é um espaço em branco, `hello[8]` é a letra 'r' e assim por diante.
 
 ## **O que podemos fazer com Strings?** <a name="can-do"></a>
 
@@ -91,7 +93,7 @@ A prática de encontrar o tamanho/comprimento de uma string é muito comum na pr
 
 **Exemplo:**
 
-```pseudo
+```python
 str = "Hello world!"
 
 print(len(str))
@@ -105,13 +107,13 @@ Saída:
 
 Como resultado, temos o valor 12. Entretanto, é possível observar que embora só exista 11 letras, o resultado apontou um elemento a mais, esse elemento corresponde ao "espaço" entre as letras "o e w", que para a função significa um caractere especial.
 
-#### Método 2
+**MÉTODO 2:**
 
 Podemos encontrar o tamanho da string em bytes, usando a biblioteca de funções "sys", através do método “getsizeof”, da seguinte forma:
 
 **Exemplo:**
 
-```pseudo
+```python
 import sys
 
 texto = "Hello World!"
@@ -128,7 +130,7 @@ Saída:
 
 O resultado será 61, que corresponde ao tamanho em bytes da string.
 
-#### Método 3
+**MÉTODO 3:**
 
 Embora exista todas essas funções, é possível encontrar o comprimento/tamanho de forma manual, segue abaixo um exemplo:
 
@@ -136,7 +138,7 @@ Criamos uma estrutura de repetição, um “for”, por exemplo, que percorre ca
 
 **Exemplo:**
 
-```pseudo
+```python
 x = 'Hello World!'
 length = 0
 
@@ -159,7 +161,7 @@ strip(): retorna uma nova string removendo todos os espaços em branco iniciais 
 
 **Exemplo:**
 
-```pseudo
+```python
 stTeste = "    TEXTO    "
 stTesteTrim = stTeste.strip()
 print("[" + stTesteTrim + "]")
@@ -167,7 +169,7 @@ print("[" + stTesteTrim + "]")
 
 Saída:
 
-```
+```output
 [TEXTO]
 ```
 
@@ -175,7 +177,7 @@ rstrip(): tem o comportamento semelhante ao “strip”, entretanto, só remove 
 
 **Exemplo:**
 
-```pseudo
+```python
 stTeste = "    TEXTO    "
 stTesteTrim = stTeste.rstrip()
 print("[" + stTesteTrim + "]")
@@ -192,7 +194,7 @@ lstrip(): atua de forma similar ao “rstrip”, porém, só remove os espaços 
 
 **Exemplo:**
 
-```pseudo
+```python
 stTeste = "    TEXTO    "
 stTesteTrim = stTeste.lstrip()
 print("[" + stTesteTrim + "]")
@@ -208,13 +210,13 @@ Saída:
 
 De modo geral, uma substring é uma string dentro de outra string, na vida real, por exemplo, podemos destacar uma palavra dentro de uma frase, ou até mesmo os prefixos e sufixos que formam as palavras. Na linguagem python podemos fazer algumas operações com as substrings.
 
-#### Método 1
+**MÉTODO 1:**
 
 find(): o método "find" retorna o índice do primeiro caracter da substring dentro da string, caso a substring não exista ele retorna "-1".
 
 **Exemplo:**
 
-```pseudo
+```python
 substring = "Hello"
 string = "Hello world!"
 print(string.find(substring))
@@ -222,19 +224,19 @@ print(string.find(substring))
 
 Saída:
 
-```
+```output
 0
 ```
 
 O resultado é "0", que corresponde ao índice inicial da substring na string.
 
-#### Método 2
+**MÉTODO 2:**
 
 rfind(): podemos usar também o método “rfind”, que retorna o último índice da substring na string.
 
 **Exemplo:**
 
-```pseudo
+```python
 substring = "hello"
 string = "hello world"
 print(string.rfind(substring))
@@ -246,13 +248,13 @@ Saída:
 4
 ```
 
-#### Método 3
+**MÉTODO 3:**
 
 index(): Além das funções "find e rfind", também podemos usar o método "index", que funciona de forma semelhante ao método "find", todavia quando a substring não é encontrada o método retorna "ValueError".
 
 **Exemplo:**
 
-```pseudo
+```python
 substring = "z"
 string = "Hello world"
 print(string.index(substring))
@@ -264,13 +266,13 @@ Saída:
 ValueError
 ```
 
-#### Método 4
+**MÉTODO 4:**
 
 Operador in: Podemos usar também o operador "in" que verifica se o operando à esquerda está contido na lista/string à direita.
 
 **Exemplo:**
 
-```pseudo
+```python
 str = "Hello world!"
 if 'Hello' in str:
 print("encontrado!")
@@ -282,13 +284,13 @@ Saída:
 encontrado!
 ```
 
-#### Método 5
+**MÉTODO 5:**
 
 endswith(): O método "endswhith" verifica se a substring está no final da string, caso esteja essa função retorna "true", caso contrário retorna "false".
 
 **Exemplo:**
 
-```pseudo
+```python
 str = "Hello world"
 subs="world"
 str.startswith( subs )
@@ -300,13 +302,13 @@ Saída:
 true
 ```
 
-##### Método 6:
+**MÉTODO 6:**
 
 startswith(): É semelhante ao "endswhith", entretanto verifica se a substring está no início da string.
 
 **Exemplo:**
 
-```pseudo
+```python
 str = "Hello world"
 subs = "Hello"
 str.startswith( subs )
@@ -318,13 +320,13 @@ Saída:
 true
 ```
 
-#### Método 7
+**MÉTODO 7:**
 
 count(): Com o método "count" é possível contar a quantidade de incidências da substring na string.
 
 **Exemplo:**
 
-```pseudo
+```python
 str = "Hello world"
 subs = "Hello"
 str.count( subs )
@@ -336,13 +338,13 @@ Saída:
 1
 ```
 
-#### Outras operações
+**Outras operações:**
 
 splint(): Além de encontrar ou contar substrings, é possível criar uma lista de substrings a partir de uma string, usando a função "split".
 
 **Exemplo:**
 
-```pseudo
+```python
 string = "Hello world!"
 print(string.split())
 ```
@@ -359,7 +361,7 @@ O método replace é utilizado para substituir um ou mais trechos em uma string,
 
 **Exemplo de uso com parâmetros:**
 
-```pseudo
+```python
 string.replace(valorvelho, valornovo, contador)
 ```
 
@@ -497,11 +499,9 @@ Strings são de fato estruturas muito úteis no nosso dia a dia. Seu uso é esse
 
 ## Este guia foi desenvolvido por
 
-**Luiz Gustavo**  
-[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/luiz-gustavo-silva-151395205/)[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/)
+**<center>Luiz Gustavo**</center>[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/luiz-gustavo-silva-151395205/)[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/)
 
-**Gabriel Ferreira**  
-[![Dev.to blog](https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white)](https://dev.to/ufgabiira)[![LeetCode](https://img.shields.io/badge/LeetCode-000000?style=for-the-badge&logo=LeetCode&logoColor=#d16c06)](https://leetcode.com/gabriel_ferreira/)[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ufgabiira)
+**<center>Gabriel Ferreira</center>**[![Dev.to blog](https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white)](https://dev.to/ufgabiira)[![LeetCode](https://img.shields.io/badge/LeetCode-000000?style=for-the-badge&logo=LeetCode&logoColor=#d16c06)](https://leetcode.com/gabriel_ferreira/)[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ufgabiira)
 
 **Wellder Bernardo**  
 **Cipriano Jose**
